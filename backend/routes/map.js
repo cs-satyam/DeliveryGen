@@ -10,3 +10,5 @@ router.post("/autocomplete", authMiddleware, mapController.getAutoCompleteSugges
 
 module.exports = router;
  
+
+
