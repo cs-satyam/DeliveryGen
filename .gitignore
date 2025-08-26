@@ -1,0 +1,32 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build output
+dist/
+build/
+out/
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore compiled files
+*.class
+*.pyc
+*.o
+*.obj
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
