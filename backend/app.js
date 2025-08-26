@@ -6,6 +6,8 @@ const morgan = require("morgan");
 const connectDB = require("./db/db");
 const authRoutes = require("./routes/auth");
 const mapRoutes = require("./routes/map");
+const vrpRoutes = require("./routes/vrp");
+
 
 const app = express();
 
@@ -21,6 +23,7 @@ app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/map", mapRoutes);
+app.use("/vrp", vrpRoutes);
 
 
 module.exports = app;
