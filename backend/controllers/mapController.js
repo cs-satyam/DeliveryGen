@@ -9,7 +9,7 @@ exports.getAddressCoordinate = async (req, res) => {
     const location = await mapService.getAddressCoordinate(address);
     res.json({ location });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500 ).json({ error: err.message });
   }
 };
 

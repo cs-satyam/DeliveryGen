@@ -8,12 +8,15 @@ module.exports.getAddressCoordinate = async (address) => {
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
 
     try {
+
+
         const response = await axios.get(url);
         console.log("Google Geocode API response:", response.data); // <-- DEBUG LOG
 
         if (response.data.status === 'OK' && response.data.results.length > 0) {
             const location = response.data.results[0].geometry.location;
             return {
+                
                 lat: location.lat,
                  lng: location.lng
             };
